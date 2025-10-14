@@ -1,0 +1,106 @@
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1.5rem;
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+  }
+
+  td {
+    text-align: right;
+    position: relative;
+    padding: 12px 15px 12px 50%;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  td::before {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #008060; 
+    font-size: 1rem;
+  }
+
+  td:nth-of-type(1)::before { content: "اليوم"; }
+  td:nth-of-type(2)::before { content: "الساعة"; }
+  td:nth-of-type(3)::before { content: "الفئة"; }
+  td:nth-of-type(4)::before { content:  "القسم" ;}
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1.5rem;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: none;
+  }
+
+  td {
+    text-align: right;
+    position: relative;
+    padding: 12px 15px 12px 45%; 
+    font-size: 1.1rem;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
+
+  td:last-child {
+    border-bottom: none;
+  }
+
+  td::before {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    white-space: nowrap;
+    font-weight: 700;
+    color: #008060;
+    font-size: 1rem;
+  }
+
+  td:nth-of-type(1)::before { content: "اليوم"; }
+  td:nth-of-type(2)::before { content: "الساعة"; }
+  td:nth-of-type(3)::before { content: "الفئة"; }
+  td:nth-of-type(4)::before { content: "القسم" ;}
+}
+
+

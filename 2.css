@@ -1,0 +1,113 @@
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #008060;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  background: #e0f7f1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about, .contact, .classes {
+  padding: 1.5rem;
+  margin: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.facebook-link i {
+  font-size: 24px;
+  color: #ffffff;
+  margin-left: 8px;
+}
+
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  td {
+    text-align: right;
+    position: relative;
+    padding-right: 50%;
+  }
+
+  td::before {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  td:nth-of-type(1)::before { content: "اليوم"; }
+  td:nth-of-type(2)::before { content: "الساعة"; }
+  td:nth-of-type(3)::before { content: "الفئة"; }
+  td:nth-of-type(4)::before { content: "المستوى"; }
+}
+
+
